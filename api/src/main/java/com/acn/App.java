@@ -20,11 +20,11 @@ public class App
 {
     public static void main( String[] args )
     {
+    	//BITTE MERGE MICH
             RestTemplate restTemplate = new RestTemplate();
             String resourceUrl = "https://api.pro.coinbase.com/products/BTC-EUR/candles";
             HttpHeaders headers = new HttpHeaders();
            
-            
             //Für Protection Type
             headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
             headers.setContentType(MediaType.APPLICATION_JSON);
@@ -45,7 +45,5 @@ public class App
             	Candle candle = new Candle(time, low, high, open, close, volume);
 				System.out.println(candle); 
 			}
-            
-          	
     }
 }
